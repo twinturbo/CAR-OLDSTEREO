@@ -18,7 +18,7 @@ L AA-ROBSCH:BLUTOOTHMODULE U1
 U 1 1 608C8F02
 P 1850 1600
 F 0 "U1" H 1850 1650 50  0000 R CNN
-F 1 "TL074" H 2050 1450 50  0000 R CNN
+F 1 "BLUE MODULE" H 2050 1450 50  0000 R CNN
 F 2 "" H 1800 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1800 1800 50  0001 C CNN
 	1    1850 1600
@@ -99,45 +99,23 @@ Wire Wire Line
 Connection ~ 7150 5700
 Wire Wire Line
 	7150 5700 7050 5700
-Text GLabel 10000 1000 2    50   Output ~ 0
+Text GLabel 4500 1400 1    50   Output ~ 0
 Src-AR
-Text GLabel 10000 1000 0    50   Input ~ 0
+Text GLabel 3850 1700 0    50   Input ~ 0
 Pre-AR
-$Comp
-L power:GND #PWR?
-U 1 1 608E554B
-P 10400 3350
-F 0 "#PWR?" H 10400 3100 50  0001 C CNN
-F 1 "GND" H 10405 3177 50  0000 C CNN
-F 2 "" H 10400 3350 50  0001 C CNN
-F 3 "" H 10400 3350 50  0001 C CNN
-	1    10400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT_Dual_Separate RV?
-U 2 1 608E3576
-P 10400 3200
-F 0 "RV?" H 10330 3246 50  0000 R CNN
-F 1 "10K A" H 10330 3155 50  0000 R CNN
-F 2 "" H 10400 3200 50  0001 C CNN
-F 3 "~" H 10400 3200 50  0001 C CNN
-	2    10400 3200
-	1    0    0    -1  
-$EndComp
-Text GLabel 10000 1400 0    50   Input ~ 0
+Text GLabel 3850 2450 0    50   Input ~ 0
 Pre-BL
-Text GLabel 10000 1500 2    50   Output ~ 0
+Text GLabel 4500 2250 1    50   Output ~ 0
 Src-BR
-Text GLabel 10000 1500 0    50   Input ~ 0
+Text GLabel 3850 2550 0    50   Input ~ 0
 Pre-BR
-Text GLabel 10000 1800 0    50   Input ~ 0
+Text GLabel 3850 3400 0    50   Input ~ 0
 Pre-CR
-Text GLabel 10000 1800 2    50   Output ~ 0
+Text GLabel 4500 3100 1    50   Output ~ 0
 Src-CR
-Text GLabel 10000 1700 2    50   Output ~ 0
+Text GLabel 4000 3100 1    50   Output ~ 0
 Src-CL
-Text GLabel 10000 1700 0    50   Input ~ 0
+Text GLabel 3850 3300 0    50   Input ~ 0
 Pre-CL
 Text GLabel 2300 2100 3    50   Output ~ 0
 Pre-BL
@@ -289,9 +267,9 @@ Text GLabel 8900 5400 0    50   Input ~ 0
 Amp-L
 Text GLabel 8900 5500 0    50   Input ~ 0
 Amp-R
-Text GLabel 2300 3650 3    50   Output ~ 0
+Text GLabel 2100 2850 1    50   Output ~ 0
 Pre-AL
-Text GLabel 2200 3650 3    50   Output ~ 0
+Text GLabel 2200 2850 1    50   Output ~ 0
 Pre-AR
 $Comp
 L power:GND #PWR?
@@ -304,28 +282,6 @@ F 3 "" H 2300 2850 50  0001 C CNN
 	1    2300 2850
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 609E6149
-P 2100 2850
-F 0 "#PWR?" H 2100 2600 50  0001 C CNN
-F 1 "GND" H 2105 2677 50  0000 C CNN
-F 2 "" H 2100 2850 50  0001 C CNN
-F 3 "" H 2100 2850 50  0001 C CNN
-	1    2100 2850
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 609E6DD9
-P 2100 3650
-F 0 "#PWR?" H 2100 3400 50  0001 C CNN
-F 1 "GND" H 2105 3477 50  0000 C CNN
-F 2 "" H 2100 3650 50  0001 C CNN
-F 3 "" H 2100 3650 50  0001 C CNN
-	1    2100 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10800 4050 10750 4050
 Connection ~ 10750 4050
@@ -334,8 +290,8 @@ Wire Wire Line
 Wire Wire Line
 	10750 4200 10850 4200
 Text GLabel 10850 4200 2    50   Output Italic 0
-VDD
-Text GLabel 2000 3650 3    50   Input Italic 0
+VCC
+Text GLabel 2300 3650 3    50   Input Italic 0
 VDD
 $Comp
 L AA-ROBSCH:RDA5807M U?
@@ -348,10 +304,424 @@ F 3 "" H 2000 3300 50  0001 C CNN
 	1    2050 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10000 1400 2    50   Output ~ 0
+Text GLabel 4000 2250 1    50   Output ~ 0
 Src-BL
-Text GLabel 10000 900  2    50   Output ~ 0
+Text GLabel 4000 1400 1    50   Output ~ 0
 Src-AL
-Text GLabel 10000 900  0    50   Input ~ 0
+Text GLabel 3850 1600 0    50   Input ~ 0
 Pre-AL
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 60A239E4
+P 4250 1500
+F 0 "RV?" H 4250 1267 50  0000 C CNN
+F 1 "R_POT_Dual" H 4250 1176 50  0000 C CNN
+F 2 "" H 4500 1425 50  0001 C CNN
+F 3 "~" H 4500 1425 50  0001 C CNN
+	1    4250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1700 4350 1700
+Wire Wire Line
+	4350 1700 4350 1600
+$Comp
+L power:GND #PWR?
+U 1 1 60A271AB
+P 4150 1600
+F 0 "#PWR?" H 4150 1350 50  0001 C CNN
+F 1 "GND" H 4155 1427 50  0000 C CNN
+F 2 "" H 4150 1600 50  0001 C CNN
+F 3 "" H 4150 1600 50  0001 C CNN
+	1    4150 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A28046
+P 4650 1600
+F 0 "#PWR?" H 4650 1350 50  0001 C CNN
+F 1 "GND" H 4655 1427 50  0000 C CNN
+F 2 "" H 4650 1600 50  0001 C CNN
+F 3 "" H 4650 1600 50  0001 C CNN
+	1    4650 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 60A29E30
+P 4250 2350
+F 0 "RV?" H 4250 2117 50  0000 C CNN
+F 1 "R_POT_Dual" H 4250 2026 50  0000 C CNN
+F 2 "" H 4500 2275 50  0001 C CNN
+F 3 "~" H 4500 2275 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2550 4350 2550
+Wire Wire Line
+	4350 2550 4350 2450
+$Comp
+L power:GND #PWR?
+U 1 1 60A2A0C8
+P 4150 2450
+F 0 "#PWR?" H 4150 2200 50  0001 C CNN
+F 1 "GND" H 4155 2277 50  0000 C CNN
+F 2 "" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A2A0D2
+P 4650 2450
+F 0 "#PWR?" H 4650 2200 50  0001 C CNN
+F 1 "GND" H 4655 2277 50  0000 C CNN
+F 2 "" H 4650 2450 50  0001 C CNN
+F 3 "" H 4650 2450 50  0001 C CNN
+	1    4650 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT_Dual RV?
+U 1 1 60A2F48E
+P 4250 3200
+F 0 "RV?" H 4250 2967 50  0000 C CNN
+F 1 "R_POT_Dual" H 4250 2876 50  0000 C CNN
+F 2 "" H 4500 3125 50  0001 C CNN
+F 3 "~" H 4500 3125 50  0001 C CNN
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3400 4350 3400
+Wire Wire Line
+	4350 3400 4350 3300
+$Comp
+L power:GND #PWR?
+U 1 1 60A315D0
+P 4650 3300
+F 0 "#PWR?" H 4650 3050 50  0001 C CNN
+F 1 "GND" H 4655 3127 50  0000 C CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A31BDA
+P 4150 3300
+F 0 "#PWR?" H 4150 3050 50  0001 C CNN
+F 1 "GND" H 4155 3127 50  0000 C CNN
+F 2 "" H 4150 3300 50  0001 C CNN
+F 3 "" H 4150 3300 50  0001 C CNN
+	1    4150 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 60A3A4BC
+P 7200 2100
+F 0 "A?" H 6750 1250 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6650 1100 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 7200 2100 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 7200 2100 50  0001 C CNN
+	1    7200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A3B16C
+P 7200 3100
+F 0 "#PWR?" H 7200 2850 50  0001 C CNN
+F 1 "GND" H 7205 2927 50  0000 C CNN
+F 2 "" H 7200 3100 50  0001 C CNN
+F 3 "" H 7200 3100 50  0001 C CNN
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3100 7300 3100
+Connection ~ 7200 3100
+Text GLabel 7700 2600 2    50   Output ~ 0
+SCL
+Text GLabel 2000 3650 3    50   Input ~ 0
+SCL
+Text GLabel 7700 2500 2    50   Output ~ 0
+SDA
+Text GLabel 1900 3650 3    50   Input ~ 0
+SDA
+Wire Wire Line
+	1900 2850 950  2850
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 60A4A977
+P 750 2850
+F 0 "J?" H 642 2525 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 642 2616 50  0000 C CNN
+F 2 "" H 750 2850 50  0001 C CNN
+F 3 "~" H 750 2850 50  0001 C CNN
+	1    750  2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A4B58E
+P 950 2750
+F 0 "#PWR?" H 950 2500 50  0001 C CNN
+F 1 "GND" H 955 2577 50  0000 C CNN
+F 2 "" H 950 2750 50  0001 C CNN
+F 3 "" H 950 2750 50  0001 C CNN
+	1    950  2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 60A4C46D
+P 850 2100
+F 0 "J?" H 742 1775 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 742 1866 50  0000 C CNN
+F 2 "" H 850 2100 50  0001 C CNN
+F 3 "~" H 850 2100 50  0001 C CNN
+	1    850  2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2100 1200 2100
+Wire Wire Line
+	1200 2100 1200 2000
+Wire Wire Line
+	1200 2000 1050 2000
+Wire Wire Line
+	1500 2100 1500 2200
+Wire Wire Line
+	1500 2200 1050 2200
+Wire Wire Line
+	1050 2200 1050 2100
+Text GLabel 7300 1100 1    50   Output Italic 0
+VDD
+Text GLabel 7400 1100 1    50   Input Italic 0
+VCC
+NoConn ~ 7100 1100
+NoConn ~ 7700 1500
+NoConn ~ 7700 1600
+NoConn ~ 7700 1900
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 60A52739
+P 800 3500
+F 0 "J?" H 692 3075 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 692 3166 50  0000 C CNN
+F 2 "" H 800 3500 50  0001 C CNN
+F 3 "~" H 800 3500 50  0001 C CNN
+	1    800  3500
+	-1   0    0    1   
+$EndComp
+Text GLabel 1000 3600 2    50   Input ~ 0
+SDA
+Text GLabel 1000 3500 2    50   Input ~ 0
+SCL
+$Comp
+L power:GND #PWR?
+U 1 1 60A53BD2
+P 1000 3300
+F 0 "#PWR?" H 1000 3050 50  0001 C CNN
+F 1 "GND" H 1005 3127 50  0000 C CNN
+F 2 "" H 1000 3300 50  0001 C CNN
+F 3 "" H 1000 3300 50  0001 C CNN
+	1    1000 3300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1700 1100 1    50   Input Italic 0
+VCC
+Text GLabel 1000 3400 2    50   Input Italic 0
+VCC
+Text GLabel 6700 2800 0    50   Output ~ 0
+Prev
+Text GLabel 6700 2700 0    50   Output ~ 0
+Next
+Text GLabel 6700 2600 0    50   Output ~ 0
+Pause
+Text GLabel 2000 1100 1    50   Input ~ 0
+Prev
+Text GLabel 2100 1100 1    50   Input ~ 0
+Next
+Text GLabel 2200 1100 1    50   Input ~ 0
+VOL-
+Text GLabel 2300 1100 1    50   Input ~ 0
+Vol+
+Text GLabel 6700 2500 0    50   Output ~ 0
+VOL-
+Text GLabel 6700 2400 0    50   Output ~ 0
+Vol+
+NoConn ~ 1900 1100
+NoConn ~ 1800 1100
+Text GLabel 6700 1700 0    50   Input ~ 0
+Intrp1
+Text GLabel 6700 1800 0    50   Input ~ 0
+Intrp2
+Text GLabel 6700 1900 0    50   Input ~ 0
+Sw1
+Text GLabel 6700 2000 0    50   Input ~ 0
+Sw2
+Text GLabel 6700 2100 0    50   Input ~ 0
+Sw3
+Text GLabel 6700 2200 0    50   Input ~ 0
+Sw4
+Text GLabel 6700 2300 0    50   Input ~ 0
+Sw5
+Text GLabel 9050 950  0    50   Input ~ 0
+Sw1
+Text GLabel 9050 1050 0    50   Input ~ 0
+Sw2
+Text GLabel 9050 1150 0    50   Input ~ 0
+Sw3
+Text GLabel 9050 1250 0    50   Input ~ 0
+Sw4
+Text GLabel 9050 1350 0    50   Input ~ 0
+Sw5
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A65D4F
+P 9250 950
+F 0 "SW?" H 9900 950 50  0000 C CNN
+F 1 "SW_Push" H 10150 950 50  0000 C CNN
+F 2 "" H 9250 1150 50  0001 C CNN
+F 3 "~" H 9250 1150 50  0001 C CNN
+	1    9250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A67904
+P 9250 1050
+F 0 "SW?" H 9900 1050 50  0000 C CNN
+F 1 "SW_Push" H 10150 1050 50  0000 C CNN
+F 2 "" H 9250 1250 50  0001 C CNN
+F 3 "~" H 9250 1250 50  0001 C CNN
+	1    9250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A689F5
+P 9250 1150
+F 0 "SW?" H 9900 1150 50  0000 C CNN
+F 1 "SW_Push" H 10150 1150 50  0000 C CNN
+F 2 "" H 9250 1350 50  0001 C CNN
+F 3 "~" H 9250 1350 50  0001 C CNN
+	1    9250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A68DE3
+P 9250 1250
+F 0 "SW?" H 9900 1250 50  0000 C CNN
+F 1 "SW_Push" H 10150 1250 50  0000 C CNN
+F 2 "" H 9250 1450 50  0001 C CNN
+F 3 "~" H 9250 1450 50  0001 C CNN
+	1    9250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60A6A4B3
+P 9250 1350
+F 0 "SW?" H 9900 1350 50  0000 C CNN
+F 1 "SW_Push" H 10150 1350 50  0000 C CNN
+F 2 "" H 9250 1550 50  0001 C CNN
+F 3 "~" H 9250 1550 50  0001 C CNN
+	1    9250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1350 9450 1250
+Connection ~ 9450 950 
+Wire Wire Line
+	9450 950  9450 750 
+Connection ~ 9450 1050
+Wire Wire Line
+	9450 1050 9450 950 
+Connection ~ 9450 1150
+Wire Wire Line
+	9450 1150 9450 1050
+Connection ~ 9450 1250
+Wire Wire Line
+	9450 1250 9450 1150
+Text GLabel 9450 750  1    50   Input Italic 0
+VCC
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 60A6ECA6
+P 9550 1900
+F 0 "SW?" H 9550 2267 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9550 2176 50  0000 C CNN
+F 2 "" H 9400 2060 50  0001 C CNN
+F 3 "~" H 9550 2160 50  0001 C CNN
+	1    9550 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 1800 2    50   Input Italic 0
+VCC
+Text GLabel 9250 2000 0    50   Output ~ 0
+Intrp2
+Text GLabel 9250 1800 0    50   Output ~ 0
+Intrp1
+$Comp
+L power:GND #PWR?
+U 1 1 60A72ADE
+P 8850 1900
+F 0 "#PWR?" H 8850 1650 50  0001 C CNN
+F 1 "GND" H 8855 1727 50  0000 C CNN
+F 2 "" H 8850 1900 50  0001 C CNN
+F 3 "" H 8850 1900 50  0001 C CNN
+	1    8850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1900 9250 1900
+Text GLabel 7700 2100 2    50   Input ~ 0
+Sw6
+Text GLabel 9850 2000 2    50   Output ~ 0
+Sw6
+Text GLabel 3500 3650 2    50   Output ~ 0
+Pre-CR
+Text GLabel 3500 3550 2    50   Output ~ 0
+Pre-CL
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 60A7C49F
+P 3300 3650
+F 0 "J?" H 3332 3975 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 3332 3884 50  0000 C CNN
+F 2 "" H 3300 3650 50  0001 C CNN
+F 3 "~" H 3300 3650 50  0001 C CNN
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A7CF96
+P 3300 3850
+F 0 "#PWR?" H 3300 3600 50  0001 C CNN
+F 1 "GND" H 3305 3677 50  0000 C CNN
+F 2 "" H 3300 3850 50  0001 C CNN
+F 3 "" H 3300 3850 50  0001 C CNN
+	1    3300 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6700 1500
+NoConn ~ 6700 1600
+NoConn ~ 7700 2300
+NoConn ~ 7700 2400
+NoConn ~ 7700 2700
+NoConn ~ 7700 2800
+NoConn ~ 1750 6450
+NoConn ~ 1750 6850
+Text GLabel 7700 2200 2    50   Output Italic 0
+Mute
 $EndSCHEMATC
