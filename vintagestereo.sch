@@ -455,7 +455,6 @@ Text GLabel 6700 2500 0    50   Output ~ 0
 VOL-
 Text GLabel 6700 2400 0    50   Output ~ 0
 Vol+
-NoConn ~ 1900 1100
 NoConn ~ 1800 1100
 Text GLabel 6700 1700 0    50   Input ~ 0
 Intrp1
@@ -614,7 +613,6 @@ F 3 "" H 3300 3850 50  0001 C CNN
 $EndComp
 NoConn ~ 6700 1500
 NoConn ~ 6700 1600
-NoConn ~ 7700 2300
 NoConn ~ 7700 2400
 NoConn ~ 7700 2700
 NoConn ~ 7700 2800
@@ -755,4 +753,10 @@ F 3 "" H 4150 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 3400 4350 3400
+Text GLabel 7700 2300 2    50   Output Italic 0
+Pause
+Text GLabel 1900 1100 1    50   Input Italic 0
+Pause
+Text Notes 7100 6700 0    50   ~ 0
+VintageStereo V0.0.2
 $EndSCHEMATC

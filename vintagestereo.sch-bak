@@ -105,15 +105,13 @@ Text GLabel 3850 1700 0    50   Input ~ 0
 Pre-AR
 Text GLabel 3850 2450 0    50   Input ~ 0
 Pre-BL
-Text GLabel 4500 2250 1    50   Output ~ 0
-Src-BR
 Text GLabel 3850 2550 0    50   Input ~ 0
 Pre-BR
 Text GLabel 3850 3400 0    50   Input ~ 0
 Pre-CR
-Text GLabel 4500 3100 1    50   Output ~ 0
+Text GLabel 4500 3250 1    50   Output ~ 0
 Src-CR
-Text GLabel 4000 3100 1    50   Output ~ 0
+Text GLabel 4000 3150 1    50   Output ~ 0
 Src-CL
 Text GLabel 3850 3300 0    50   Input ~ 0
 Pre-CL
@@ -304,121 +302,21 @@ F 3 "" H 2000 3300 50  0001 C CNN
 	1    2050 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 2250 1    50   Output ~ 0
+Text GLabel 4000 2300 1    50   Output ~ 0
 Src-BL
 Text GLabel 4000 1400 1    50   Output ~ 0
 Src-AL
 Text GLabel 3850 1600 0    50   Input ~ 0
 Pre-AL
 $Comp
-L Device:R_POT_Dual RV?
-U 1 1 60A239E4
-P 4250 1500
-F 0 "RV?" H 4250 1267 50  0000 C CNN
-F 1 "R_POT_Dual" H 4250 1176 50  0000 C CNN
-F 2 "" H 4500 1425 50  0001 C CNN
-F 3 "~" H 4500 1425 50  0001 C CNN
-	1    4250 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 1700 4350 1700
-Wire Wire Line
-	4350 1700 4350 1600
-$Comp
-L power:GND #PWR?
-U 1 1 60A271AB
-P 4150 1600
-F 0 "#PWR?" H 4150 1350 50  0001 C CNN
-F 1 "GND" H 4155 1427 50  0000 C CNN
-F 2 "" H 4150 1600 50  0001 C CNN
-F 3 "" H 4150 1600 50  0001 C CNN
-	1    4150 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 60A28046
-P 4650 1600
-F 0 "#PWR?" H 4650 1350 50  0001 C CNN
-F 1 "GND" H 4655 1427 50  0000 C CNN
-F 2 "" H 4650 1600 50  0001 C CNN
-F 3 "" H 4650 1600 50  0001 C CNN
-	1    4650 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_POT_Dual RV?
-U 1 1 60A29E30
-P 4250 2350
-F 0 "RV?" H 4250 2117 50  0000 C CNN
-F 1 "R_POT_Dual" H 4250 2026 50  0000 C CNN
-F 2 "" H 4500 2275 50  0001 C CNN
-F 3 "~" H 4500 2275 50  0001 C CNN
-	1    4250 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 2550 4350 2550
-Wire Wire Line
-	4350 2550 4350 2450
-$Comp
-L power:GND #PWR?
-U 1 1 60A2A0C8
-P 4150 2450
-F 0 "#PWR?" H 4150 2200 50  0001 C CNN
-F 1 "GND" H 4155 2277 50  0000 C CNN
-F 2 "" H 4150 2450 50  0001 C CNN
-F 3 "" H 4150 2450 50  0001 C CNN
-	1    4150 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60A2A0D2
-P 4650 2450
-F 0 "#PWR?" H 4650 2200 50  0001 C CNN
-F 1 "GND" H 4655 2277 50  0000 C CNN
-F 2 "" H 4650 2450 50  0001 C CNN
-F 3 "" H 4650 2450 50  0001 C CNN
-	1    4650 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_POT_Dual RV?
-U 1 1 60A2F48E
-P 4250 3200
-F 0 "RV?" H 4250 2967 50  0000 C CNN
-F 1 "R_POT_Dual" H 4250 2876 50  0000 C CNN
-F 2 "" H 4500 3125 50  0001 C CNN
-F 3 "~" H 4500 3125 50  0001 C CNN
-	1    4250 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 3400 4350 3400
-Wire Wire Line
-	4350 3400 4350 3300
-$Comp
-L power:GND #PWR?
-U 1 1 60A315D0
-P 4650 3300
-F 0 "#PWR?" H 4650 3050 50  0001 C CNN
-F 1 "GND" H 4655 3127 50  0000 C CNN
-F 2 "" H 4650 3300 50  0001 C CNN
-F 3 "" H 4650 3300 50  0001 C CNN
-	1    4650 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60A31BDA
-P 4150 3300
-F 0 "#PWR?" H 4150 3050 50  0001 C CNN
-F 1 "GND" H 4155 3127 50  0000 C CNN
-F 2 "" H 4150 3300 50  0001 C CNN
-F 3 "" H 4150 3300 50  0001 C CNN
-	1    4150 3300
+P 4650 1700
+F 0 "#PWR?" H 4650 1450 50  0001 C CNN
+F 1 "GND" H 4655 1527 50  0000 C CNN
+F 2 "" H 4650 1700 50  0001 C CNN
+F 3 "" H 4650 1700 50  0001 C CNN
+	1    4650 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -557,7 +455,6 @@ Text GLabel 6700 2500 0    50   Output ~ 0
 VOL-
 Text GLabel 6700 2400 0    50   Output ~ 0
 Vol+
-NoConn ~ 1900 1100
 NoConn ~ 1800 1100
 Text GLabel 6700 1700 0    50   Input ~ 0
 Intrp1
@@ -716,7 +613,6 @@ F 3 "" H 3300 3850 50  0001 C CNN
 $EndComp
 NoConn ~ 6700 1500
 NoConn ~ 6700 1600
-NoConn ~ 7700 2300
 NoConn ~ 7700 2400
 NoConn ~ 7700 2700
 NoConn ~ 7700 2800
@@ -724,4 +620,141 @@ NoConn ~ 1750 6450
 NoConn ~ 1750 6850
 Text GLabel 7700 2200 2    50   Output Italic 0
 Mute
+$Comp
+L Device:R_POT RV?
+U 1 1 60A8ABB1
+P 4000 1600
+F 0 "RV?" V 3885 1600 50  0000 C CNN
+F 1 "R_POT" V 3794 1600 50  0000 C CNN
+F 2 "" H 4000 1600 50  0001 C CNN
+F 3 "~" H 4000 1600 50  0001 C CNN
+	1    4000 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 60A8BA8A
+P 4500 1700
+F 0 "RV?" V 4385 1700 50  0000 C CNN
+F 1 "R_POT" V 4294 1700 50  0000 C CNN
+F 2 "" H 4500 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A8E36E
+P 4150 1600
+F 0 "#PWR?" H 4150 1350 50  0001 C CNN
+F 1 "GND" H 4155 1427 50  0000 C CNN
+F 2 "" H 4150 1600 50  0001 C CNN
+F 3 "" H 4150 1600 50  0001 C CNN
+	1    4150 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 1700 4350 1700
+Wire Wire Line
+	4500 1550 4500 1400
+Wire Wire Line
+	4000 1450 4000 1400
+$Comp
+L Device:R_POT RV?
+U 1 1 60A93929
+P 4500 2550
+F 0 "RV?" V 4385 2550 50  0000 C CNN
+F 1 "R_POT" V 4294 2550 50  0000 C CNN
+F 2 "" H 4500 2550 50  0001 C CNN
+F 3 "~" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 60A925E0
+P 4000 2450
+F 0 "RV?" V 3885 2450 50  0000 C CNN
+F 1 "R_POT" V 3794 2450 50  0000 C CNN
+F 2 "" H 4000 2450 50  0001 C CNN
+F 3 "~" H 4000 2450 50  0001 C CNN
+	1    4000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A2A0D2
+P 4650 2550
+F 0 "#PWR?" H 4650 2300 50  0001 C CNN
+F 1 "GND" H 4655 2377 50  0000 C CNN
+F 2 "" H 4650 2550 50  0001 C CNN
+F 3 "" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A2A0C8
+P 4150 2450
+F 0 "#PWR?" H 4150 2200 50  0001 C CNN
+F 1 "GND" H 4155 2277 50  0000 C CNN
+F 2 "" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 2550 4350 2550
+Text GLabel 4500 2400 1    50   Output ~ 0
+Src-BR
+$Comp
+L Device:R_POT RV?
+U 1 1 60A98E1F
+P 4500 3400
+F 0 "RV?" V 4385 3400 50  0000 C CNN
+F 1 "R_POT" V 4294 3400 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "~" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 60A99217
+P 4000 3300
+F 0 "RV?" V 3885 3300 50  0000 C CNN
+F 1 "R_POT" V 3794 3300 50  0000 C CNN
+F 2 "" H 4000 3300 50  0001 C CNN
+F 3 "~" H 4000 3300 50  0001 C CNN
+	1    4000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A99221
+P 4650 3400
+F 0 "#PWR?" H 4650 3150 50  0001 C CNN
+F 1 "GND" H 4655 3227 50  0000 C CNN
+F 2 "" H 4650 3400 50  0001 C CNN
+F 3 "" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A9922B
+P 4150 3300
+F 0 "#PWR?" H 4150 3050 50  0001 C CNN
+F 1 "GND" H 4155 3127 50  0000 C CNN
+F 2 "" H 4150 3300 50  0001 C CNN
+F 3 "" H 4150 3300 50  0001 C CNN
+	1    4150 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 3400 4350 3400
+Text GLabel 7700 2300 2    50   Output Italic 0
+Pause
+Text GLabel 1900 1100 1    50   Input Italic 0
+Pause
 $EndSCHEMATC
